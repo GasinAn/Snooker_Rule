@@ -1,0 +1,35 @@
+% 编译方式: xelatex*2
+\documentclass[a5paper]{ctexbook}
+\usepackage{syntonly}
+\usepackage{hyperref}
+\usepackage{enumitem}
+\usepackage{fancyhdr}
+%\syntaxonly
+\pagestyle{fancy}
+\fancyhf{}
+\cfoot{\thepage}
+\chead{\rightmark}
+\renewcommand{\thesection}{\arabic{section}}
+\renewcommand{\thesubsection}{\arabic{subsection}}
+\makeatletter
+\renewcommand{\tableofcontents}{
+    \thispagestyle{empty}
+    \ \newpage
+    \thispagestyle{empty}
+    \section*{\contentsname}\@starttoc{toc}
+    \thispagestyle{empty}
+}
+\makeatother
+\title{斯诺克规则（2022版）}
+\author{安梯西登\ \ 译}
+\date{}
+\begin{document}
+    \maketitle
+    \tableofcontents
+    \setcounter{page}{0}
+    \include{equipment.tex}
+    \include{definitions.tex}
+    \include{the_game.tex}
+    \include{the_players.tex}
+    \include{the_officials.tex}
+\end{document}
