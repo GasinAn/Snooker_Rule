@@ -15,7 +15,7 @@
 \renewcommand{\tableofcontents}{
     \thispagestyle{empty}
     \ \newpage
-    \thispagestyle{empty}
+    \pagestyle{empty}
     \section*{\contentsname}\@starttoc{toc}
     \thispagestyle{empty}
 }
@@ -27,6 +27,7 @@
     \maketitle
     \tableofcontents
     \setcounter{page}{0}
+    \pagestyle{fancy}
     \include{equipment.tex}
     \include{definitions.tex}
     \include{the_game.tex}
