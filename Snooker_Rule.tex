@@ -3,6 +3,7 @@
 \usepackage{syntonly}
 \usepackage{hyperref}
 \usepackage{paralist}
+\usepackage{titlesec}
 \usepackage{enumitem}
 \usepackage{fancyhdr}
 %\syntaxonly
@@ -21,10 +22,11 @@
     \thispagestyle{empty}
 }
 \makeatother
+\titlespacing*{\subsection}{0pt}{10pt}{8pt}
 \setlist[enumerate]{
-    topsep=5pt,
-    itemsep=4pt,
-    parsep=2pt,
+    topsep=5pt plus 0pt minus 0pt,
+    itemsep=4pt plus 0pt minus 0pt,
+    parsep=2pt plus 0pt minus 0pt,
     labelsep=0.4em,
 }
 \title{斯诺克规则（2024版）}
